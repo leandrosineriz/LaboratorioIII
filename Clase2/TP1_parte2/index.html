@@ -5,6 +5,119 @@
         <title>TP1</title> 
     </head>
     <body>
-        
+        <h2>Alta de Empleados</h2>
+        <form>
+            
+            <table align="center">
+                <tr>
+                    <td colspan="2">                       
+                        <h4>Datos Personales</h4>
+                        <hr>
+                    </td>                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>
+                        DNI:
+                    </td>
+                    <td>
+                        <input type="number" name="txtDni" id="txtDni" min="1000000" max="55000000">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Apellido:
+                    </td>
+                    <td>
+                        <input type="text" name="txtApellido" id="txtApellido">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        Nombre:
+                    </td>
+                    <td>
+                        <input type="text" name="txtName" id="txtName">
+                    </td>
+                    
+
+                </tr>
+
+                <tr>
+                    <td>
+                        Sexo:
+                    </td>
+
+                    <td>
+                        <select name="cboSexo" id="cboSexo">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select>
+
+                    </td>
+                   
+                </tr>
+                
+                <tr>
+                    <td colspan="2">
+                        <h4>Datos Laborales</h4>
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Legajo:
+                    </td>
+                    <td>
+                        <input type="number" name="txtLegajo" id="txtLegajo" min="100" max="550">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Sueldo:
+                    </td>
+                    <td>
+                        <input type="number" name="txtSueldo" id="txtSueldo" min="8000" step="500">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        Turno:
+                    </td>                    
+
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>                     
+                        <input type="radio" name="rdoTurno" value="manana" checked>Mañana<br>
+                        <input type="radio" name="rdoTurno" value="tarde">Tarde<br>
+                        <input type="radio" name="rdoTurno" value="noche">Noche<br>                                                               
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <button type="reset">Limpiar</button>
+                    </td>                   
+                </tr>
+
+                <tr>
+                    <td>
+                        <button type="submit">Enviar</button>
+                    </td>                    
+                </tr>
+                
+            </table>
+        </form>
     </body>
 </html>
