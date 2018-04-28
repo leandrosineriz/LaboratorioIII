@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./javascript/validaciones.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div><h2>Login</h2></div>
+    
+    <table align="center">
+        <tr>
+            <td><h4>Ingreso de Credenciales</h4></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <hr>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                Usuario:
+            </td>
+            <td>
+                <input type="text" id="txtUsu">
+            </td>
+            <td>
+                <span style="display:none" id="spanDni">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Contraseña:
+            </td>
+            <td>
+                <input type="text" name="Apellido" id="txtPass">
+            </td>
+            <td>
+                <span style="display:none" id="spanApellido">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">     
+                <hr>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><button type="reset">Limpiar</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="Test.ValidarUsuario();">Enviar</button></td>
+        </tr>
+    </table>
+</body>
+</html>
