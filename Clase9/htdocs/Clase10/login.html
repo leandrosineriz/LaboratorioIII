@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./frontend/frameworks/bootstrap/dist/css/bootstrap.css">
+    <script src="./frontend/frameworks/jquery/dist/jquery.js"></script>
+    <script src="./frontend/frameworks/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./frontend/administrarLogin.js"></script>
+    <title>Inicio Sesion</title>
+</head>
+<body style="background-color:rgb(82, 90, 207)">
+    <div class="container-fluid ">
+        <br><br><br><br><br><br>
+       <div class="col-lg-2">
+
+       </div>
+        <form class="form-signin col-lg-6" style="background-color:rgb(196, 130, 216)" >
+            <h2 class="form-signin-heading">Inicio Sesion</h2>
+            <label for="inputUsuario" class="sr-only">Usuario</label>
+            <input type="text" id="inputUsuario" class="form-control" placeholder="Usuario" required="" autofocus="">
+            <label for="inputPassword" class="sr-only">Contraseña</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me"> Recordarme
+                </label>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="">
+                    <button type="button" class="btn btn-succes btn-lg btn-block" onclick="IniciarSesion()">Aceptar</button>             
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="">
+                    <button type="reset" class="btn btn-danger btn-lg btn-block">Cancelar</button>             
+                </div>
+                
+            </div>
+            <br>
+            
+        </form>
+        <div class="col-lg-4"></div>
+     <!-- /container -->    
+    <div class="row" id="divMostrar">
+        <div class="label label-success" style="background-color:rgb(75, 45, 207)">
+            <label id="lblToken" ></label>
+        </div>
+    </div>
+</body>
+</html>
